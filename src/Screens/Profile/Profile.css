@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../Locales/fonts/RobotoCondensed-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "RobotoItalic";
+  src: url("../../Locales/fonts/RobotoCondensed-Italic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+* {
+  text-decoration: none;
+  margin: 0;
+  background-color: transparent;
+}
+
+.profileMainContainer {
+  background-color: white;
+  border-radius: 25px;
+  padding: 5%;
+  width: 80%;
+  margin: 50px auto;
+}
+.profileMainContainer .profileRessourcesSelector {
+  width: 100%;
+  margin: 40px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.profileMainContainer .profileRessourcesSelector span {
+  width: 50%;
+  text-align: center;
+  font-size: 1.5em;
+  display: block;
+  cursor: pointer;
+}
+.profileMainContainer .profileRessourcesSelector span.selected {
+  text-decoration: underline;
+  text-decoration-color: #03989E;
+}
+.profileMainContainer .hideProfileRessources {
+  display: none;
+}
+.profileMainContainer .profileMyRessources, .profileMainContainer .profileLikedRessources {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 550px) {
+  .profileMainContainer .profileRessourcesSelector span {
+    font-size: 1.3em;
+  }
+}
+.dark-mode .profileMainContainer {
+  background-color: #343434;
+}/*# sourceMappingURL=Profile.css.map */

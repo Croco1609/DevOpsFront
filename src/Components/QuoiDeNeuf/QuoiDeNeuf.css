@@ -1,0 +1,207 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../Locales/fonts/RobotoCondensed-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "RobotoItalic";
+  src: url("../../Locales/fonts/RobotoCondensed-Italic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+* {
+  text-decoration: none;
+  margin: 0;
+  background-color: transparent;
+}
+
+h1 {
+  color: #FFA500;
+  font: 700 4.5em "Roboto", sans-serif;
+  padding-bottom: 25px;
+  margin-left: 75px;
+}
+
+.quoiDeNeuf {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+}
+
+.containerBoxesButton {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerMain {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.containerBoxes {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+.boxLeft {
+  width: 40%;
+  height: 450px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  position: relative;
+  margin-bottom: 15px;
+  cursor: pointer;
+  background-position: center;
+}
+
+.boxLeft:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.boxRight {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.box {
+  position: relative;
+  width: auto;
+  min-width: 35%;
+  height: 195px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  margin: 0 0 15px 15px;
+  background-position: center;
+  background-size: cover;
+}
+.box .bannerText {
+  font-size: 1.5em;
+}
+.box .bannerStat {
+  font-size: 1em;
+}
+
+.box:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.banner {
+  position: absolute;
+  height: 25%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bannerText {
+  color: white;
+  font: 700 3em "Roboto", sans-serif;
+  text-align: center;
+  background-color: transparent;
+  margin: 0;
+}
+
+.bannerStat {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  align-items: center;
+  color: white;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.button {
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 140px;
+  border-radius: 20px;
+  background-color: #03989E;
+  color: white;
+  margin-right: 65px;
+}
+.button span {
+  display: flex;
+  background-color: #03989E;
+  color: white;
+  font-size: 1em;
+  font-family: "RobotoItalic", sans-serif;
+}
+.button .icon svg {
+  margin-left: 10px;
+  display: flex;
+  align-self: center;
+  background-color: #03989E;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+@media (max-width: 1400px) {
+  h1 {
+    font-size: 3.5em;
+  }
+}
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  .containerBoxes {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .boxLeft, .boxRight {
+    width: 100%;
+  }
+  .boxLeft {
+    height: 300px;
+  }
+  .boxRight .box {
+    width: 40%;
+  }
+}
+@media (max-width: 850px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 680px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  .boxRight .box {
+    width: 100%;
+  }
+}/*# sourceMappingURL=QuoiDeNeuf.css.map */

@@ -1,0 +1,34 @@
+// Couleurs
+
+$mainColor : #03989E;
+$titreColorOrange : #FFA500;
+
+
+$categoryCultures : #9E0303;
+$categoryMentalHealth : #FFAFB4;
+$categoryCommunication : #03989E;
+$categoryPersonnalDev : #5b31e7;
+$categoryEmotionalIntelligence :#85e425;
+$categoryHobbies : #39d0c1;
+$categoryProfessionalWorld : #e7bf6a;
+$categoryParenthood : #e38ed4;
+$categoryLifeQuality : #03a848;
+$categorySearchingForMeaning : #dc8774;
+$categoryPhysicHealth : #8ac984;
+$categorySpirituality : #bbcc82;
+$categoryAffectiveLife : #ffe947;
+
+// Polices
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../Locales/fonts/RobotoCondensed-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+@font-face {
+    font-family: 'RobotoItalic';
+    src: url('../../Locales/fonts/RobotoCondensed-Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+  }

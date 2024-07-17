@@ -1,0 +1,90 @@
+@import "../../scss/variables";
+.containerBoxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .boxCategory {
+    width: 20%;
+    height: 150px;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+  }
+
+  .boxCategory h2{
+    color: black;
+  }
+  
+  @media (max-width: 1024px) {
+    .boxCategory {
+      width: 25%; /* Affiche 4 catégories par ligne sur un écran d'ordinateur de 15 pouces */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .boxCategory {
+      width: 45%; /* Affiche 2 catégories par ligne sur un grand téléphone */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .boxCategory {
+      width: 100%; /* Affiche une catégorie par ligne sur un petit écran */
+    }
+  }
+  
+
+  .boxCategory:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+  }
+ 
+
+.colorCultures{
+  background-color: $categoryCultures;
+}
+.colorMentalHealth{
+  background-color: $categoryMentalHealth ;
+}
+.colorCommunication{
+  background-color: $categoryCommunication;
+}
+.colorPersonnalDev{
+  background-color:$categoryPersonnalDev ;
+}
+
+.colorEmotionalIntelligence {
+  background-color: $categoryEmotionalIntelligence;
+}
+.colorHobbies {
+  background-color: $categoryHobbies;
+}
+.colorProfessionalWorld {
+  background-color: $categoryProfessionalWorld;
+}
+.colorParenthood {
+  background-color: $categoryParenthood ;
+}
+.colorLifeQuality {
+  background-color: $categoryLifeQuality;
+}
+.colorSearchingForMeaning {
+  background-color:$categorySearchingForMeaning;
+}
+.colorPhysicHealth {
+  background-color: $categoryPhysicHealth;
+}
+.colorSpirituality {
+  background-color: $categorySpirituality;
+};
+.colorAffectiveLife {
+  background-color: $categoryAffectiveLife;
+}

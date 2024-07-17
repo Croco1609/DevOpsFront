@@ -1,0 +1,19 @@
+@import "../../scss/normalize";
+@import "../../scss/variables";
+
+.updateProfileMainContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 70px 250px;
+    background-color: $mainColor;
+    border-radius: 20px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+    }
+
+    .buttonDelete{
+        color: red;
+    }

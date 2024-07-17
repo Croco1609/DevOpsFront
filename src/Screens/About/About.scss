@@ -1,0 +1,28 @@
+.secondDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.text-container{
+    margin: 60px;
+    max-width: 1000px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #03989E;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.text-container h2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.text-container p {
+    font-size: medium;
+    font-family: 'Robotoitalic', sans-serif;
+    margin-left: 15px;
+    color: white;
+}

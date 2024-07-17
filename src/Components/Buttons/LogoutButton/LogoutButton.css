@@ -1,0 +1,10 @@
+.buttonLogOut {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: red;
+}/*# sourceMappingURL=LogoutButton.css.map */

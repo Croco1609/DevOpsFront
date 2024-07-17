@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../Locales/fonts/RobotoCondensed-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "RobotoItalic";
+  src: url("../../Locales/fonts/RobotoCondensed-Italic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+* {
+  text-decoration: none;
+  margin: 0;
+  background-color: transparent;
+}
+
+.savedRessourcesMainContainer {
+  background-color: white;
+  border-radius: 25px;
+  padding: 5%;
+  width: 80%;
+  margin: 50px auto;
+}
+.savedRessourcesMainContainer h2 {
+  color: #FFA500;
+  text-align: center;
+}
+.savedRessourcesMainContainer .myRessource {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 570px) {
+  .savedRessourcesMainContainer h2 {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 470px) {
+  .savedRessourcesMainContainer h2 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 370px) {
+  .savedRessourcesMainContainer h2 {
+    font-size: 1.5em;
+  }
+}
+.dark-mode .savedRessourcesMainContainer {
+  background-color: #343434;
+}/*# sourceMappingURL=SavedRessources.css.map */

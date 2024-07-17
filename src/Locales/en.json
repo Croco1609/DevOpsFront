@@ -1,0 +1,160 @@
+{
+  "general" :
+  {
+    "ressources" : "resources",
+    "likes" : "favorites"
+  },
+  "ressourceType" :{
+    "article" : "article"
+  },
+  "categories" : {
+    "Communication" : "Communication",
+    "Cultures" : "Cultures",
+    "PersonnalDev" : "Personal Development",
+    "EmotionalIntelligence" : "Emotional Intelligence",
+    "Hobbies" : "Hobbies",
+    "ProfessionalWorld" : "Professional World",
+    "Parenthood" : "Parenthood",
+    "LifeQuality" : "Quality of Life",
+    "SearchingForMeaning" : "Searching for Meaning",
+    "PhysicHealth" : "Physical Health",
+    "MentalHealth" : "Mental Health",
+    "Spirituality" : "Spirituality",
+    "AffectiveLife" : "Affective Life"
+  },
+  "resourceTypes": {
+    "ActivityGametobedone": "Activity/Game to be done",
+    "Article": "Article",
+    "ChallengeCard": "Challenge Card",
+    "CourseinPDFformat": "Course in PDF format",
+    "ExerciseWorkshop": "Exercise/Workshop",
+    "ReadingSheet": "Reading Sheet",
+    "OnlineGame": "Online Game",
+    "Video": "Video"
+  },
+  "relationTypes": {
+      "Self": "Self",
+      "Partner": "Partner",
+      "FamilyChildren": "Family - Children",
+      "FamilyParents": "Family - Parents",
+      "FamilySiblings": "Family - Siblings",
+      "ProfessionalColleagues": "Professional - Colleagues",
+      "ProfessionalCollaborators": "Professional - Collaborators",
+      "ProfessionalManagers": "Professional - Managers",
+      "FriendsCommunity": "Friends and Community",
+      "Strangers": "Strangers"
+  },
+  "nav": {
+    "search" : "Find a resource",
+    "categories": "Categories",
+    "resources": "Resources",
+    "exchangeSpace": "Exchange Space",
+    "about": "About",
+    "faq": "FAQ",
+    "addRessource" : "Publish a resource",
+    "accessibility" : "Accessibility",
+    "myAccount" : "My account",
+    "lastRessources" : "Latest resources",
+    "mySavedResources" : "Saved resources",
+    "logout" : "Logout",
+    "myProfile" : "My profile",
+    "login": "Login",
+    "langSelector" : "Language",
+    "admin" : "Admin panel"
+  },
+  "homeBanner" : {
+    "title" : "Thousands of resources to brighten up your life",
+    "addRessoures" : "Share your resources!"
+  },
+  "profile" : {
+    "update" : "Update my profile",
+    "myRessources" : "My resources",
+    "likedRessources": "Liked resources"
+  },
+  "publishResource": {
+    "createResource": "Publish your resource",
+    "title": "Resource title",
+    "description": "Resource description",
+    "category": "Category",
+    "submit": "Submit resource",
+    "chooseCategory": "Choose category",
+    "chooseResourceType" : "Choose resource type",
+    "chooseRelationType" : "Choose relation type",
+    "pleaseLogin":"Please log in to publish a resource",
+    "private" : "Make resource private?",
+    "file" : "Choose a file",
+    "resourceType" : "Resource type",
+    "relationType" : "Relation type"
+  },
+  "notFound" : {
+    "text" : "This is not the page you are looking for",
+    "button" : "Return to homepage"
+  },
+  "loading" : {
+    "loading" : "Loading..."
+  },
+  "backOffice"  : {
+    "waitingRessources" : "Pending resources",
+    "reports" : "Reported users",
+    "goBack" : "Return to ressources-relationelles.gouv",
+    "admin" : "Admin panel",
+    "categories" : "Categories",
+    "pageCategories": "Manage categories",
+    "statsTitle": "Statistics"
+  },
+  "resourcesDetails" : {
+    "resourceNotFound" : "This resource was not found",
+    "saveButton" : "Save",
+    "unsaveButton": "Unsave",
+    "valideButton" : "Approve",
+    "refuseButton" : "Reject",
+    "rejected" : "Your resource has been rejected",
+    "pending" : "Pending approval",
+    "deleteButton" : "Delete resource"
+  },
+  "savedRessources" : {
+    "title" : "Saved resources"
+  },
+  "backOfficeHome" : {
+    "ressourceToValidate" : "Resources to validate",
+    "reports" : "Reports"
+  },
+  "tour" : {
+    "back" : "Back",
+    "close" : "Close",
+    "last" : "Last",
+    "next" : "Next",
+    "skip" : "Skip"
+  },
+  "HomeTour" : {
+    "step1" : "Welcome to (Re)sources relationelles, here is a quick guide for your first steps!",
+    "step2" : "Here, you will find all the resources and can filter according to your needs!",
+    "step3" : "Here, you can publish resources!",
+    "step4" : "Here, you can change accessibility settings for your comfort!",
+    "step5" : "Here, you can log in and access your information!"
+  },
+  "comment" : {
+    "title" : "Comments section",
+    "log" : "Log in to post a comment",
+    "commentbody" : "Post your comment",
+    "submit" : "Submit",
+    "reply" : "Reply"
+  },
+  "updateProfile" : {
+    "title" : "Update my profile",
+    "buttonUpdateProfile" : "Update",
+    "buttonCancel" : "Cancel",
+    "buttonDelete" : "Delete profile"
+  },
+  "footer": {
+    "search" : "Find a resource",
+    "categories": "Categories",
+    "resources": "Resources",
+    "about": "About",
+    "faq": "FAQ",
+    "condition" : "Terms of use",
+    "cookie": "Cookie policy",
+    "legal" : "Legal notice",
+    "confidencialite" : "Privacy policy"
+  }
+}

@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../Locales/fonts/RobotoCondensed-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "RobotoItalic";
+  src: url("../../Locales/fonts/RobotoCondensed-Italic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+* {
+  text-decoration: none;
+  margin: 0;
+  background-color: transparent;
+}
+
+.ProfileInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.ProfileInfo .ProfileStat {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.ProfileInfo .ProfileStat .ProfilePicture {
+  width: 175px;
+  height: 175px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.ProfileInfo .ProfileStat .ProfileName .Name {
+  color: #03989E;
+  font-size: 3em;
+}
+.ProfileInfo .ProfileStat .ProfileName p {
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+.ProfileInfo .UpdateProfile {
+  background-color: #03989E;
+  color: white;
+  border-radius: 25px;
+  font-size: 1.5em;
+  padding: 5px 10px;
+}
+
+@media (max-width: 1150px) {
+  .ProfileInfo .ProfileStat .ProfilePicture {
+    width: 150px;
+    height: 150px;
+  }
+  .ProfileInfo .ProfileStat .ProfileName .Name {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 1000px) {
+  .ProfileInfo .ProfileStat {
+    width: 60%;
+  }
+  .ProfileInfo .ProfileStat .ProfileName .Name {
+    font-size: 2.2em;
+  }
+  .ProfileInfo .UpdateProfile {
+    border-radius: 15px;
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 750px) {
+  .ProfileInfo {
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+  }
+  .ProfileInfo .ProfileStat {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 530px) {
+  .ProfileInfo .ProfileStat .ProfileName .Name {
+    font-size: 1.8em;
+  }
+  .ProfileInfo .ProfileStat .ProfileName p {
+    font-size: 1em;
+  }
+}
+@media (max-width: 430px) {
+  .ProfileInfo {
+    height: 250px;
+  }
+  .ProfileInfo .ProfileStat {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=ProfileInfo.css.map */

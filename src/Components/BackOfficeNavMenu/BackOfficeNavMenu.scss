@@ -1,0 +1,75 @@
+@import "../../scss/variables";
+@import "../../scss/normalize";
+
+.backOfficeHeader{
+    position: fixed;
+    top : 0;
+    width: 20%;
+    height: 100vh;
+    border-radius: 0 12px 12px 0;
+    margin : 0;
+    padding: 0;
+    .backOfficeNav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+        width: 100%;
+        .BackOfficeLogo{
+            width: 100%;
+            text-align: center;
+            
+            hr{
+                width: 90%;
+                background-color: black;
+                margin: 0 auto;
+                margin-bottom: 20px;
+
+            }
+        
+            .logo{
+            width: 100%;
+            margin: 0;
+
+            img{
+                width: 100%;
+            }}
+        }
+    
+
+        .backOfficeSubNav{
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: start;
+            width: 100%;
+            
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+            a{
+                padding: 10px;
+                margin: 10px auto;
+                width: 100%;
+                color: black;
+                &.selected{
+                    background-color: #03989e7a;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        
+
+        .buttonLogOut{
+            margin: 0;
+        }
+
+    }
+}
+
+.linkMenuPanelAdmin{
+    font-family: 'Roboto', sans-serif;
+}

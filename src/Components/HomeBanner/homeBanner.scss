@@ -1,0 +1,284 @@
+@import "../../scss/variables";
+
+.addRessourcesBanner{
+    background-color: white;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.dark-mode{
+    .addRessourcesBanner{
+        background-color: #343434;
+    }
+}
+
+.homeBanner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textAddRessourcesBanner{
+    color: $titreColorOrange;
+    font: 100 2em 'Roboto', sans-serif;
+    padding-bottom: 25px;
+}
+
+.callToActionNewRessources{
+    background-color: $titreColorOrange;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 25px;
+
+    &::before{
+        font-family:'Bootstrap-icons';
+        content: "\F4FD";
+        font-weight: 700;
+        margin: 10px;
+    }
+
+   
+}
+
+//Here is the style for the decoration circle of the banner
+
+.circleDecoration {
+    border: $titreColorOrange 3px solid;
+    width: 200px;
+    height: 200px;
+    border-radius: 50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    &>span{
+        width: 150px;
+        height: 150px;
+        border-radius: 50% ;
+        border: $titreColorOrange 3px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+
+        span{
+            width: 100px;
+            height: 100px;
+            border-radius: 50% ;
+            background-color: $titreColorOrange;   
+            display: block;
+        }
+    }
+
+    &.topLeft{
+        top : -100px;
+        left: -100px;
+    }
+
+    &.bottomRigth{
+        bottom : -100px;
+        right  : -100px;
+    }
+
+    &.midleBottomLeft{
+        bottom : -100px;
+        left: 350px;
+    }
+
+    &.midleTopRigth{
+        top : -100px;
+        right  : 350px;
+    }
+
+}
+
+// debut du responsive
+@media (max-width: 1550px) { 
+    .circleDecoration {
+    
+        &.midleBottomLeft{
+            bottom : -100px;
+            left: 250px;
+        }
+    
+        &.midleTopRigth{
+            top : -100px;
+            right  : 250px;
+        }
+    
+    }
+
+
+}
+
+@media (max-width: 1400px) { 
+    .circleDecoration {
+
+    width: 150px;
+    height: 150px;
+        
+    &>span{
+        width: 100px;
+        height: 100px;   
+
+        span{
+            width: 50px;
+            height: 50px;
+            border-radius: 50% ;
+        }
+    }
+    
+        &.topLeft{
+            top : -75px;
+            left: -75px;
+        }   
+
+        &.bottomRigth{
+            bottom : -75px;
+            right  : -75px;
+        }
+
+        &.midleBottomLeft{
+            bottom : -75px;
+            left: 250px;
+        }
+    
+        &.midleTopRigth{
+            top : -75px;
+            right  : 250px;
+        }
+    
+    }
+
+
+}
+
+@media (max-width: 1200px) { 
+    .circleDecoration {
+
+        &.midleBottomLeft{
+            left: 175px;
+        }
+    
+        &.midleTopRigth{
+            right  : 175px;
+        }
+    
+    }
+}
+
+@media (max-width: 1000px) { 
+    .circleDecoration {
+
+    width: 200px;
+    height: 200px;
+        
+    &>span{
+        width: 150px;
+        height: 150px;   
+
+        span{
+            width: 100px;
+            height: 100px;
+            border-radius: 50% ;
+        }
+    }
+    
+        &.topLeft{
+            top : -100px;
+            left: -100px;
+        }   
+
+        &.bottomRigth{
+            bottom : -100px;
+            right  : -100px;
+        }
+
+        &.midleBottomLeft{
+            bottom : -1000px;
+            left: 10000px;
+        }
+    
+        &.midleTopRigth{
+            top : -1000px;
+            right  : 10000px;
+        }
+    
+    }
+
+
+}
+
+@media (max-width: 575px) {
+    .addRessourcesBanner{
+        padding: 5px 0;
+    }
+    .textAddRessourcesBanner{
+      font-size: 1.5em;
+    }
+    
+    .callToActionNewRessources{
+        font-size: 20px;
+    }  
+
+    .circleDecoration {
+
+        width: 100px;
+        height: 100px;
+            
+        &>span{
+            width: 75px;
+            height: 75px;   
+    
+            span{
+                width: 50px;
+                height: 50px;
+                border-radius: 50% ;
+            }
+        }
+        
+            &.topLeft{
+                top : -50px;
+                left: -50px;
+            }   
+    
+            &.bottomRigth{
+                bottom : -50px;
+                right  : -50px;
+            }
+        }
+}
+
+@media (max-width: 400px) {
+    .addRessourcesBanner{
+        padding: 5px 0;
+    }
+    .textAddRessourcesBanner{
+      font-size: 1.5em;
+    }
+    
+    .callToActionNewRessources{
+        font-size: 20px;
+    }  
+
+    .circleDecoration {
+
+        
+            &.topLeft{
+                top : -5000px;
+                left: -5000px;
+            }   
+    
+            &.bottomRigth{
+                bottom : -5000px;
+                right  : -5000px;
+            }
+        }
+}

@@ -1,0 +1,57 @@
+@import "../../scss/variables";
+@import "../../scss/normalize";
+.profileMainContainer{
+    background-color: white;
+    border-radius: 25px;
+    padding: 5%;
+    width: 80%;
+    margin : 50px auto;
+
+    .profileRessourcesSelector{
+        width: 100%;
+        margin: 40px auto 0 auto;
+        display: flex;
+        justify-content: space-around; 
+        span{
+            width: 50%;
+            text-align: center;
+            font-size: 1.5em;
+            display: block;
+            cursor: pointer;
+
+            &.selected{
+                text-decoration: underline ;
+
+                text-decoration-color: $mainColor;
+            }
+        }
+    }
+
+    .hideProfileRessources{
+        display: none;
+    }
+
+    .profileMyRessources, .profileLikedRessources{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width : 550px){
+    .profileMainContainer{
+    
+        .profileRessourcesSelector{
+            span{
+                font-size: 1.3em;
+            }
+        }
+    }
+
+}
+.dark-mode{
+    .profileMainContainer{
+        background-color: #343434;
+    }
+    
+    }

@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Roboto";
+  src: url("../../Locales/fonts/RobotoCondensed-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "RobotoItalic";
+  src: url("../../Locales/fonts/RobotoCondensed-Italic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+.containerBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.boxCategory {
+  width: 20%;
+  height: 150px;
+  margin: 10px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+}
+
+.boxCategory h2 {
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  .boxCategory {
+    width: 25%; /* Affiche 4 catégories par ligne sur un écran d'ordinateur de 15 pouces */
+  }
+}
+@media (max-width: 768px) {
+  .boxCategory {
+    width: 45%; /* Affiche 2 catégories par ligne sur un grand téléphone */
+  }
+}
+@media (max-width: 480px) {
+  .boxCategory {
+    width: 100%; /* Affiche une catégorie par ligne sur un petit écran */
+  }
+}
+.boxCategory:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.colorCultures {
+  background-color: #9E0303;
+}
+
+.colorMentalHealth {
+  background-color: #FFAFB4;
+}
+
+.colorCommunication {
+  background-color: #03989E;
+}
+
+.colorPersonnalDev {
+  background-color: #5b31e7;
+}
+
+.colorEmotionalIntelligence {
+  background-color: #85e425;
+}
+
+.colorHobbies {
+  background-color: #39d0c1;
+}
+
+.colorProfessionalWorld {
+  background-color: #e7bf6a;
+}
+
+.colorParenthood {
+  background-color: #e38ed4;
+}
+
+.colorLifeQuality {
+  background-color: #03a848;
+}
+
+.colorSearchingForMeaning {
+  background-color: #dc8774;
+}
+
+.colorPhysicHealth {
+  background-color: #8ac984;
+}
+
+.colorSpirituality {
+  background-color: #bbcc82;
+}
+
+.colorAffectiveLife {
+  background-color: #ffe947;
+}/*# sourceMappingURL=CategorysPage.css.map */

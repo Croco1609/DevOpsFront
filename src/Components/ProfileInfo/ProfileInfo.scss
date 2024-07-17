@@ -1,0 +1,126 @@
+@import "../../scss/variables";
+@import "../../scss/normalize";
+
+
+.ProfileInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width : 100%;
+
+    .ProfileStat{
+        width: 50%;
+        display: flex;
+        align-items: center;
+
+        .ProfilePicture{
+            width: 175px;
+            height: 175px;
+            margin-right: 20px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .ProfileName{
+            .Name{
+                color : $mainColor;
+                font-size: 3em;
+            }
+
+            p{
+                font-weight: bold;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    .UpdateProfile{
+        background-color: $mainColor;
+        color : white;
+        border-radius: 25px;
+        font-size: 1.5em;
+        padding: 5px 10px;
+    }
+}
+
+
+@media (max-width : 1150px){
+    .ProfileInfo{
+        .ProfileStat{
+            .ProfilePicture{
+                width: 150px;
+                height: 150px;
+            }
+
+            .ProfileName{
+                .Name{
+                    font-size: 2.5em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width : 1000px)
+{
+    .ProfileInfo{
+        .ProfileStat{
+            width: 60%;
+            .ProfileName{
+                .Name{
+                    font-size: 2.2em;
+                }
+            }
+        }
+
+        .UpdateProfile{
+            border-radius: 15px;
+            font-size: 1.3em;
+        }
+    }
+
+}
+
+@media (max-width : 750px) {
+    .ProfileInfo{
+        flex-direction: column;
+        height: 200px;
+        justify-content: space-between;
+        .ProfileStat{
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+    
+}
+
+@media (max-width : 530px)
+{
+    .ProfileInfo{
+        .ProfileStat{
+            .ProfileName{
+                .Name{
+                    font-size: 1.8em;
+                }
+   
+                p{
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width : 430px)
+{
+    .ProfileInfo{
+        height: 250px;
+        .ProfileStat{
+                flex-direction: column;
+            }
+        }
+    
+}
+

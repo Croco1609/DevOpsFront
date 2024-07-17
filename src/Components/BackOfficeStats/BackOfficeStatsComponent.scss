@@ -1,0 +1,41 @@
+.statSpan{
+    display: flex;
+    font-family: 'Robotoitalic';
+}
+
+.buttonExport{
+    margin-top: 15px;
+}
+
+h3 {
+    cursor: default;
+}
+
+select{
+    cursor: pointer;
+}
+
+.backOfficeStatsMainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statsContainer{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 20px;
+}
+.categorySelectName{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.secondContainer{
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 30px;
+}

@@ -1,0 +1,160 @@
+{
+    "general" :
+    {
+      "ressources" : "Ressourcen",
+      "likes" : "Favoriten"
+    },
+    "ressourceType" :{
+      "article" : "Artikel"
+    },
+    "categories" : {
+      "Communication" : "Kommunikation",
+      "Cultures" : "Kulturen",
+      "PersonnalDev" : "Persönliche Entwicklung",
+      "EmotionalIntelligence" : "Emotionale Intelligenz",
+      "Hobbies" : "Hobbys",
+      "ProfessionalWorld" : "Berufswelt",
+      "Parenthood" : "Elternschaft",
+      "LifeQuality" : "Lebensqualität",
+      "SearchingForMeaning" : "Sinnsuche",
+      "PhysicHealth" : "Körperliche Gesundheit",
+      "MentalHealth" : "Mentale Gesundheit",
+      "Spirituality" : "Spiritualität",
+      "AffectiveLife" : "Liebesleben"
+    },
+    "resourceTypes": {
+      "ActivityGametobedone": "Aktivität/Spiel zum Ausführen",
+      "Article": "Artikel",
+      "ChallengeCard": "Herausforderungskarte",
+      "CourseinPDFformat": "Kurs im PDF-Format",
+      "ExerciseWorkshop": "Übung/Workshop",
+      "ReadingSheet": "Leseblatt",
+      "OnlineGame": "Online-Spiel",
+      "Video": "Video"
+    },
+    "relationTypes": {
+        "Self": "Selbst",
+        "Partner": "Partner",
+        "FamilyChildren": "Familie - Kinder",
+        "FamilyParents": "Familie - Eltern",
+        "FamilySiblings": "Familie - Geschwister",
+        "ProfessionalColleagues": "Beruflich - Kollegen",
+        "ProfessionalCollaborators": "Beruflich - Mitarbeiter",
+        "ProfessionalManagers": "Beruflich - Manager",
+        "FriendsCommunity": "Freunde und Gemeinschaft",
+        "Strangers": "Fremde"
+    },
+    "nav": {
+      "search" : "Eine Ressource finden",
+      "categories": "Kategorien",
+      "resources": "Ressourcen",
+      "exchangeSpace": "Austauschbereich",
+      "about": "Über",
+      "faq": "FAQ",
+      "addRessource" : "Eine Ressource veröffentlichen",
+      "accessibility" : "Barrierefreiheit",
+      "myAccount" : "Mein Konto",
+      "lastRessources" : "Neueste Ressourcen",
+      "mySavedResources" : "Gespeicherte Ressourcen",
+      "logout" : "Abmelden",
+      "myProfile" : "Mein Profil",
+      "login": "Anmelden",
+      "langSelector" : "Sprache",
+      "admin" : "Admin-Bereich"
+    },
+    "homeBanner" : {
+      "title" : "Tausende von Ressourcen, um Ihr Leben zu bereichern",
+      "addRessoures" : "Teilen Sie Ihre Ressourcen!"
+    },
+    "profile" : {
+      "update" : "Mein Profil bearbeiten",
+      "myRessources" : "Meine Ressourcen",
+      "likedRessources": "Gemocht Ressourcen"
+    },
+    "publishResource": {
+      "createResource": "Veröffentlichen Sie Ihre Ressource",
+      "title": "Ressourcentitel",
+      "description": "Ressourcenbeschreibung",
+      "category": "Kategorie",
+      "submit": "Ressource einreichen",
+      "chooseCategory": "Kategorie wählen",
+      "chooseResourceType" : "Ressourcentyp wählen",
+      "chooseRelationType" : "Beziehungstyp wählen",
+      "pleaseLogin":"Bitte loggen Sie sich ein, um eine Ressource zu veröffentlichen",
+      "private" : "Ressource privat machen?",
+      "file" : "Datei wählen",
+      "resourceType" : "Ressourcentyp",
+      "relationType" : "Beziehungstyp"
+    },
+    "notFound" : {
+      "text" : "Das ist nicht die Seite, die Sie suchen",
+      "button" : "Zurück zur Startseite"
+    },
+    "loading" : {
+      "loading" : "Laden..."
+    },
+    "backOffice"  : {
+      "waitingRessources" : "Ausstehende Ressourcen",
+      "reports" : "Gemeldete Benutzer",
+      "goBack" : "Zurück zu ressources-relationelles.gouv",
+      "admin" : "Admin-Bereich",
+      "categories" : "Kategorien",
+      "pageCategories": "Kategorien verwalten",
+      "statsTitle": "Statistiken"
+    },
+    "resourcesDetails" : {
+      "resourceNotFound" : "Diese Ressource wurde nicht gefunden",
+      "saveButton" : "Speichern",
+      "unsaveButton": "Nicht speichern",
+      "valideButton" : "Genehmigen",
+      "refuseButton" : "Ablehnen",
+      "rejected" : "Ihre Ressource wurde abgelehnt",
+      "pending" : "Warten auf Genehmigung",
+      "deleteButton" : "Ressource löschen"
+    },
+    "savedRessources" : {
+      "title" : "Gespeicherte Ressourcen"
+    },
+    "backOfficeHome" : {
+      "ressourceToValidate" : "Zu validierende Ressourcen",
+      "reports" : "Berichte"
+    },
+    "tour" : {
+      "back" : "Zurück",
+      "close" : "Schließen",
+      "last" : "Letzter",
+      "next" : "Weiter",
+      "skip" : "Überspringen"
+    },
+    "HomeTour" : {
+      "step1" : "Willkommen bei (Re)sources relationelles, hier ist ein kurzer Leitfaden für Ihre ersten Schritte!",
+      "step2" : "Hier finden Sie alle Ressourcen und können nach Ihren Bedürfnissen filtern!",
+      "step3" : "Hier können Sie Ressourcen veröffentlichen!",
+      "step4" : "Hier können Sie die Barrierefreiheitseinstellungen für Ihren Komfort ändern!",
+      "step5" : "Hier können Sie sich einloggen und auf Ihre Informationen zugreifen!"
+    },
+    "comment" : {
+      "title" : "Kommentarbereich",
+      "log" : "Loggen Sie sich ein, um einen Kommentar zu posten",
+      "commentbody" : "Posten Sie Ihren Kommentar",
+      "submit" : "Absenden",
+      "reply" : "Antworten"
+    },
+    "updateProfile" : {
+      "title" : "Mein Profil bearbeiten",
+      "buttonUpdateProfile" : "Aktualisieren",
+      "buttonCancel" : "Abbrechen",
+      "buttonDelete" : "Profil löschen"
+    },
+    "footer": {
+      "search" : "Eine Ressource finden",
+      "categories": "Kategorien",
+      "resources": "Ressourcen",
+      "about": "Über",
+      "faq": "FAQ",
+      "condition" : "Nutzungsbedingungen",
+      "cookie": "Cookie-Richtlinie",
+      "legal" : "Impressum",
+      "confidencialite" : "Datenschutzrichtlinie"
+    }
+}

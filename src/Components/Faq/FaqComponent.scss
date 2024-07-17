@@ -1,0 +1,65 @@
+@import "../../scss/variables";
+
+.mainContainer {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.faq {
+    display: flex;
+
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: $mainColor;
+    border-radius: 20px;
+    color: white;
+    align-items: center;
+    max-width: 1000px;
+}
+
+h2, h3, label{
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-weight: 800; 
+    font-size: 3em; 
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: $titreColorOrange;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 20px;
+}
+
+.questions h3:hover {
+    color: white;
+}
+
+.questions p {
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 15px;
+    transition: max-height 0.5s ease;
+    font-family: 'Robotoitalic', sans-serif;
+}
+
+.questions p.showAnswer {
+    max-height: 200px;
+}
+
+.questions p.hideAnswer {
+    max-height: 0; /* Redéfinition de la hauteur maximale pour la fermeture */
+}

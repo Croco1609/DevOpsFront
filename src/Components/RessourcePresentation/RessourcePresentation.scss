@@ -1,0 +1,218 @@
+@import "../../scss/variables";
+@import "../../scss/normalize";
+
+
+.RessourcePresentation{
+    background-color: rgb(232, 232, 232);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid black;
+    overflow: hidden;
+    margin: 20px 0;
+
+    .presentationImage{
+        width: 30%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .presentationInfo{
+        width: 50%;
+        padding: 0 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 200px;
+       
+        hr{
+            width: 100%;
+        }
+
+        .presentationName{
+            font-size: 2em;
+            color : $mainColor;
+            text-align: center;
+    
+            .type{
+                color : black;
+                text-transform: capitalize; 
+            }
+        }
+
+        .presentationCategories{
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+            overflow: hidden;
+            margin-bottom: 10px;
+
+            span{
+                border-radius: 25px;
+                padding:5px;
+                color: white;
+                width: 30%;
+                text-align: center;
+                margin-right: 20px;
+                white-space: nowrap
+            }
+            .colorCultures{
+                background-color: $categoryCultures;
+              }
+              .colorMentalHeath{
+                background-color: $categoryMentalHealth ;
+              }
+              .colorCommunication{
+                background-color: $categoryCommunication;
+              }
+              .colorPersonnalDev{
+                background-color:$categoryPersonnalDev ;
+              }
+              
+              .colorEmotionalIntelligence {
+                background-color: $categoryEmotionalIntelligence;
+              }
+              .colorHobbies {
+                background-color: $categoryHobbies;
+              }
+              .colorProfessionalWorld {
+                background-color: $categoryProfessionalWorld;
+              }
+              .colorParenthood {
+                background-color: $categoryParenthood ;
+              }
+              .colorLifeQuality {
+                background-color: $categoryLifeQuality;
+              }
+              .colorSearchingForMeaning {
+                background-color:$categorySearchingForMeaning;
+              }
+              .colorPhysicHealth {
+                background-color: $categoryPhysicHealth;
+              }
+              .colorSpirituality {
+                background-color: $categorySpirituality;
+              };
+              .colorAffectiveLife {
+                background-color: $categoryAffectiveLife;
+              }
+        }
+
+        .presentationStat{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            span{
+                font-size: 1.5em;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+}
+
+//repsonsive
+@media (max-width: 1350px) {
+    .RessourcePresentation{
+        height: 175px;
+        .presentationInfo{
+            .presentationName{
+                font-size: 1.5em;
+            }
+            .presentationStat{
+                span{
+                    font-size: 1.3em;
+                    }
+            }
+            .presentationCategories{
+                span{
+                    width : 25%; 
+                } 
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .RessourcePresentation{
+        height: 150px;
+        .presentationInfo{
+            height: 150px;
+            .presentationCategories{
+                margin-bottom: 0;
+                span{
+                    width : 30%; 
+                } 
+            }
+        }
+    }
+}
+
+@media (max-width:800px){
+    
+.RessourcePresentation{
+    width: 45%;
+    flex-direction: column;
+    height: 350px;
+
+    .presentationImage{
+        width: 100%;
+        height: 175px
+    }
+    .presentationInfo{
+        padding: 0 10px;
+        width: 98%;
+       
+        hr{
+            width: 80%;
+        }
+
+        .presentationName{
+            font-size: 1.2em;
+        }
+
+        .presentationCategories{
+            justify-content: center;
+            span{
+                width: 40%;
+            }
+        }
+
+        .presentationStat{
+            span{
+                font-size: 1.1em;
+            }
+        }
+    }
+
+}
+
+    
+}
+
+@media (max-width:680px){
+    
+    .RessourcePresentation{
+        width: 75%;
+}
+}
+
+@media (max-width:450px){
+    
+    .RessourcePresentation{
+        width: 95%;
+}
+}
+
+.dark-mode {
+    .RessourcePresentation{
+        background-color: #1e1e1e!important
+    }
+
+    .presentationCategories span{
+        color: black!important;
+    }
+}

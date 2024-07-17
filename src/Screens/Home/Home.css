@@ -1,0 +1,7 @@
+.main-container {
+  margin: 30px;
+}
+
+.slick-next::before, .slick-prev::before {
+  content: none;
+}/*# sourceMappingURL=Home.css.map */

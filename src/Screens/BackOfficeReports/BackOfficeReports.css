@@ -1,0 +1,10 @@
+.BackOfficeReportsContainer {
+  margin-left: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: #FFA500;
+}/*# sourceMappingURL=BackOfficeReports.css.map */

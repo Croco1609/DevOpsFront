@@ -1,0 +1,345 @@
+/* NavBar.css */
+@font-face {
+  font-family: "Roboto";
+  src: url("../../Locales/fonts/RobotoCondensed-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "RobotoItalic";
+  src: url("../../Locales/fonts/RobotoCondensed-Italic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+* {
+  text-decoration: none;
+  margin: 0;
+  background-color: transparent;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  box-shadow: 3px 4px 10px 0px #aca4a4;
+  background-color: white;
+  z-index: 100;
+}
+
+.dark-mode header {
+  background-color: #343434;
+  box-shadow: none;
+}
+.dark-mode header .navLink {
+  color: white;
+}
+.dark-mode header .navLink::after {
+  color: white;
+}
+
+.mainNavDesktop {
+  background: #03989E;
+  padding: 10px 0;
+}
+.mainNavDesktop .logo {
+  margin-left: 10%;
+}
+.mainNavDesktop .logo img {
+  height: auto;
+  width: 150px;
+}
+
+.mainNavDesktop {
+  background: #03989E;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 81px;
+}
+.mainNavDesktop .mainNavMenu {
+  margin-right: 10%;
+  width: 50%;
+  background-color: #03989E;
+  display: flex;
+  justify-content: space-between;
+}
+.mainNavDesktop .navLink {
+  color: white;
+  background-color: #03989E;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  font-size: 1.3em;
+}
+.mainNavDesktop .navLink::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.35s ease;
+}
+.mainNavDesktop .navLink:hover::after, .mainNavDesktop .navLink.active::after {
+  width: 100%;
+}
+
+.subNavDesktop {
+  background-color: transparent;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+}
+.subNavDesktop .navLink {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  font-size: 1.5em;
+}
+.subNavDesktop .navLink::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.35s ease;
+}
+.subNavDesktop .navLink:hover::after, .subNavDesktop .navLink.active::after {
+  width: 100%;
+}
+
+.navMobile {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #03989E;
+}
+.navMobile .mainNavMobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transition: all 3s ease;
+}
+.navMobile .mainNavMobile.show {
+  justify-content: space-between;
+}
+.navMobile .mainNavMobile.show .logo {
+  transition: all 3s ease;
+  width: 90%;
+  text-align: center;
+}
+.navMobile .mainNavMobile.show .mainNavMenu {
+  display: none;
+}
+.navMobile .mainNavMobile .mainNavMenu {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.navMobile .mainNavMobile .mainNavMenu .navLink {
+  color: white;
+  background-color: #03989E;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  font-size: 2em;
+}
+.navMobile #burger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  margin-right: 10px;
+}
+.navMobile .barre {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.subMenuMobile {
+  flex-direction: column;
+  align-items: center;
+  background-color: #03989E;
+}
+.subMenuMobile hr {
+  width: 100%;
+  height: 2px;
+  background-color: #FFA500;
+}
+.subMenuMobile .navLink {
+  color: white;
+  background-color: #03989E;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3em;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.subMenuMobile.menuShow {
+  display: flex;
+}
+.subMenuMobile.menuHide {
+  display: none;
+}
+
+.change .barre:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .barre:nth-child(2) {
+  opacity: 0;
+}
+
+.change .barre:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media (max-width: 1450px) {
+  .mainNavDesktop .mainNavMenu {
+    width: 60%;
+    margin-right: 7%;
+  }
+  .logo {
+    margin-left: 7%;
+  }
+}
+@media (max-width: 1200px) {
+  .mainNavDesktop .mainNavMenu {
+    width: 75%;
+    margin-right: 5%;
+  }
+  .logo {
+    margin-left: 5%;
+  }
+  .logo img {
+    width: 125px;
+  }
+}
+@media (max-width: 1000px) {
+  .mainNavDesktop {
+    display: none;
+  }
+  .subNavDesktop {
+    display: none;
+  }
+  .navMobile {
+    display: flex;
+  }
+}
+@media (max-width: 450px) {
+  .subMenuMobile .navLink {
+    width: 75%;
+  }
+  .navMobile .mainNavMobile .mainNavMenu .navLink {
+    font-size: 1.5em;
+  }
+}
+.account-dropdown {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  width: auto;
+}
+
+.acessiblity-dropdown .dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px;
+}
+.acessiblity-dropdown .dropdown label {
+  color: #03989E;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  width: 190px;
+  z-index: 9999;
+}
+
+.dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-buttons button:first-child {
+  background-color: #ff5733;
+  color: white;
+}
+
+.modal-buttons button:last-child {
+  background-color: #ccc;
+}
+
+.langueWithDarkMode {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+#langSelector {
+  height: auto;
+}/*# sourceMappingURL=NavBar.css.map */

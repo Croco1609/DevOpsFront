@@ -1,0 +1,21 @@
+.ressourcesMainContainer {
+  background-color: white;
+  border-radius: 25px;
+  padding: 5%;
+  width: 80%;
+  margin: 50px auto;
+}
+.ressourcesMainContainer .ressourcesDisplay {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.RessourcePresentation > div {
+  cursor: pointer;
+}
+
+.dark-mode .ressourcesMainContainer {
+  background-color: #343436;
+  color: white;
+}/*# sourceMappingURL=Resources.css.map */

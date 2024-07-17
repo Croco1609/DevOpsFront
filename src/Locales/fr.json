@@ -1,0 +1,182 @@
+{
+    "general" :
+    {
+      "ressources" : "ressources",
+      "likes" : "favoris"
+    },
+    "ressourceType" :{
+      "article" : "article"
+
+    },
+    "categories" : {
+      "Communication" : "Communication",
+      "Cultures" : "Cultures",
+      "PersonnalDev" : "Développement personnel",
+      "EmotionalIntelligence" : "Intéligence émotionelle",
+      "Hobbies" : "Loisirs",
+      "ProfessionalWorld" : "Monde professionnel",
+      "Parenthood" :"Parentalité",
+      "LifeQuality" : "Qualité de vie",
+      "SearchingForMeaning" : "Recherche de sens",
+      "PhysicHealth" : "Santé physique",
+      "MentalHealth" : "Santé mental",
+      "Spirituality" : "Spiritualité",
+      "AffectiveLife" : "Vie affective"
+    },
+
+    "resourceTypes": {
+      "ActivityGametobedone": "Activité / Jeu à réaliser",
+      "Article": "Article",
+      "ChallengeCard": "Carte défi",
+      "CourseinPDFformat": "Cours au format PDF",
+      "ExerciseWorkshop": "Exercice / Atelier",
+      "ReadingSheet": "Fiche de lecture",
+      "OnlineGame": "Jeu en ligne",
+      "Video": "Vidéo"
+    },
+
+      "relationTypes": {
+          "Self": "Soi",
+          "Partner": "Conjoint",
+          "FamilyChildren": "Famille - Enfants",
+          "FamilyParents": "Famille - Parents",
+          "FamilySiblings": "Famille - Fratrie",
+          "ProfessionalColleagues": "Professionnelle - Collègues",
+          "ProfessionalCollaborators": "Professionnelle - Collaborateur",
+          "ProfessionalManagers": "Professionnelle - Managers",
+          "FriendsCommunity": "Amis et communauté",
+          "Strangers": "Inconnus"
+      },
+
+    "nav": {
+      "search" : "Trouver une ressource",
+      "categories": "Catégories",
+      "resources": "Ressources",
+      "exchangeSpace": "Espace d'échange",
+      "about": "À propos",
+      "faq": "FAQ",
+      "addRessource" : "Publier une ressource",
+      "accessibility" : "Accessibilité",
+      "myAccount" : "Mon compte",
+      "lastRessources" : "Dernières ressources",
+      "mySavedResources" : "Ressources mises de coté",
+      "logout" : "Se déconnecter",
+      "myProfile" : "Mon profil",
+      "login": "Me connecter",
+      "langSelector" :"Langue",
+      "admin" : "Panel admin",
+      "fr" : "Français",
+      "en" : "English",
+      "de" : "Deutsch"  
+    },
+
+    "homeBanner" : {
+      "title" : "Des milliers de ressources pour égayer votre vie",
+      "addRessoures" : "Partagez vos ressources !"
+    },
+
+    "profile" : {
+      "update" : "Modifier mon profile",
+      "myRessources" : "Mes ressources",
+      "likedRessources": "Ressources aimées"
+    },
+
+    "publishResource": {
+      "createResource": "Publiez votre ressource",
+      "title": "Titre de la ressource",
+      "description": "Description de la ressource",
+      "category": "Catégorie",
+      "submit": "Soumettre la ressource",
+      "chooseCategory": "Choisir la catégorie",
+      "chooseResourceType" : "Choisir type de ressource",
+      "chooseRelationType" : "Choisir type de relation",
+      "pleaseLogin":"Connectez-vous pour pouvoir publier une ressource",
+      "private" : "Rendre la ressource privée ?",
+      "file" : "Choisir un fichier",
+      "resourceType" : "Type de ressource",
+      "relationType" : "Type de relation"
+    },
+    "notFound" : {
+      "text" : "Ce n'est pas cette page que vous recherchez",
+      "button" :"Retourner à l'accueil"
+    },
+
+    "loading" : {
+      "loading" : "Chargement..."
+    },
+
+    "backOffice"  : {
+      "waitingRessources" : "Ressources en attente",
+      "reports" : "Utilisateurs signalés",
+      "goBack" : "Retourner sur ressources-relationelles.gouv",
+      "admin" : "Pannel admin",
+      "categories" : "Categories",
+      "pageCategories": "Gestion des categories",
+      "statsTitle": "Statistiques"
+    },
+    "resourcesDetails" : {
+      "resourceNotFound" : "Cette ressource n'a pas été trouvée",
+      "saveButton" : "Mettre de coté",
+      "unsaveButton": "Ne plus mettre de coté",
+      "valideButton" : "Valider",
+      "refuseButton" : "Refuser",
+      "rejected" : "Votre ressource a été rejetée",
+      "pending" : "En attente de validation",
+      "deleteButton" : "Supprimer la ressource"
+    },
+    "savedRessources" : {
+      "title" : "Ressources mises de côté"
+    },
+
+    "backOfficeHome" : {
+      "ressourceToValidate" : "Ressouces à valider",
+      "reports" : "Signalements",
+      "totalUser" : "Total d'utilisateurs",
+      "publicRessources": "Total de ressources publiées",
+      "bannedUsers" : "Total d'utilisateurs bannies"
+    },
+
+    "tour" : {
+      "back" : "Retour",
+      "close" : "Fermer",
+      "last" : "Dernier",
+      "next" : "Suivant",
+      "skip" : "Passer"
+    },
+
+    "HomeTour" : {
+      "step1" : "Bienvenue sur (Re)sources relationelles, voici un petit guide pour vos premiers pas !",
+      "step2" : "Ici, vous trouverez toutes les ressources, et vous pourez trié selon vos besoins !",
+      "step3" : "Ici, vous pourez publier des ressources !",
+      "step4" : "Ici, vous pourrez changer les paramètres d'accésibilité pour votre confort !",
+      "step5" : "Ici, vous pouvez vous connecter et accèder à vos informations ! "
+    },
+    "comment" : {
+      "title" : "Espace commentaires",
+      "log" : "Connectez vous pour poster un commentaire",
+      "commentbody" : "Poster votre commentaire",
+      "submit" : "Envoyer", 
+      "reply" : "Répondre"
+    },
+
+    "updateProfile" : {
+      "title" : "Modifier mon profil",
+      "buttonUpdateProfile" : "Mettre à jour",
+      "buttonCancel" : "Annuler",
+      "buttonDelete" : "Supprimer le profile"
+    },
+
+    "footer": {
+      "search" : "Trouver une ressource",
+      "categories": "Catégories",
+      "resources": "Ressources",
+      "about": "À propos",
+      "faq": "FAQ",
+      "condition" : "Conditions d'utilisation",
+      "cookie": "Politique de cookies",
+      "legal" : "Mentions legal",
+      "confidencialite" : "Politique de confidentialité"
+    }
+    
+  }
+  

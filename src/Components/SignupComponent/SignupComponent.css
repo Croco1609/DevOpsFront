@@ -1,0 +1,117 @@
+* {
+  text-decoration: none;
+  margin: 0;
+  background-color: transparent;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../Locales/fonts/RobotoCondensed-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "RobotoItalic";
+  src: url("../../Locales/fonts/RobotoCondensed-Italic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+.mainContainer {
+  margin: 60px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 70px 250px;
+  background-color: #03989E;
+  border-radius: 20px;
+  color: white;
+  align-items: center;
+}
+
+h2, label {
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form input, form #firstName, form #lastName {
+  display: flex;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: rgb(158, 227, 236);
+  padding-right: 20px;
+  min-width: 175px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  width: 300px;
+}
+
+button {
+  font-weight: 700;
+  font-size: 1.2em;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  color: #FFA500;
+  border-radius: 20px;
+  margin: auto;
+  height: 35px;
+  padding: 0 15px 0 15px;
+  cursor: pointer;
+}
+
+.error {
+  color: #FFA500;
+}
+
+.passwordGroup {
+  position: relative;
+}
+
+.passwordInput {
+  position: relative;
+}
+
+.passwordIcon {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+input[type=date] {
+  display: flex;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  justify-content: center;
+  width: 40px;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 0.5;
+  cursor: pointer;
+}/*# sourceMappingURL=SignupComponent.css.map */

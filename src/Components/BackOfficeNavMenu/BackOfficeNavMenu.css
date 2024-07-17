@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../Locales/fonts/RobotoCondensed-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "RobotoItalic";
+  src: url("../../Locales/fonts/RobotoCondensed-Italic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+* {
+  text-decoration: none;
+  margin: 0;
+  background-color: transparent;
+}
+
+.backOfficeHeader {
+  position: fixed;
+  top: 0;
+  width: 20%;
+  height: 100vh;
+  border-radius: 0 12px 12px 0;
+  margin: 0;
+  padding: 0;
+}
+.backOfficeHeader .backOfficeNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+}
+.backOfficeHeader .backOfficeNav .BackOfficeLogo {
+  width: 100%;
+  text-align: center;
+}
+.backOfficeHeader .backOfficeNav .BackOfficeLogo hr {
+  width: 90%;
+  background-color: black;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.backOfficeHeader .backOfficeNav .BackOfficeLogo .logo {
+  width: 100%;
+  margin: 0;
+}
+.backOfficeHeader .backOfficeNav .BackOfficeLogo .logo img {
+  width: 100%;
+}
+.backOfficeHeader .backOfficeNav .backOfficeSubNav {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.backOfficeHeader .backOfficeNav .backOfficeSubNav a {
+  padding: 10px;
+  margin: 10px auto;
+  width: 100%;
+  color: black;
+}
+.backOfficeHeader .backOfficeNav .backOfficeSubNav a.selected {
+  background-color: rgba(3, 152, 158, 0.4784313725);
+  font-weight: bold;
+}
+.backOfficeHeader .backOfficeNav .buttonLogOut {
+  margin: 0;
+}
+
+.linkMenuPanelAdmin {
+  font-family: "Roboto", sans-serif;
+}/*# sourceMappingURL=BackOfficeNavMenu.css.map */

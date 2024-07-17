@@ -1,0 +1,9 @@
+.notFoundContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.notFoundContainer .notFoundImg {
+  width: 50%;
+}/*# sourceMappingURL=NotFound.css.map */

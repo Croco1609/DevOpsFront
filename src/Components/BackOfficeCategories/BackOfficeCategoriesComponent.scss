@@ -1,0 +1,49 @@
+.beforeClick{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    font-size: large;
+    margin-top: 5px;
+}
+
+.editButton{
+    display: flex;
+    width: 200px;
+}
+
+.beforeClick p{
+    font-size: 20px;
+}
+
+.addCat{
+    display: flex;
+    margin: 15px 10px;
+    width: 250px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.addCat p{
+    font-family: 'RobotoItalic';
+}
+
+.deleteButton{
+    color: red;
+}
+
+.mainContainerBackOfficeCategories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CategoriesContainerBackOffice{
+    display: flex;
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.addCat button{
+    margin: 0 !important;
+}

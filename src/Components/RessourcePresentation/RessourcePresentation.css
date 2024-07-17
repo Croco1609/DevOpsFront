@@ -1,0 +1,194 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../Locales/fonts/RobotoCondensed-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "RobotoItalic";
+  src: url("../../Locales/fonts/RobotoCondensed-Italic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+* {
+  text-decoration: none;
+  margin: 0;
+  background-color: transparent;
+}
+
+.RessourcePresentation {
+  background-color: rgb(232, 232, 232);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  border: 1px solid black;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.RessourcePresentation .presentationImage {
+  width: 30%;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+.RessourcePresentation .presentationInfo {
+  width: 50%;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 200px;
+}
+.RessourcePresentation .presentationInfo hr {
+  width: 100%;
+}
+.RessourcePresentation .presentationInfo .presentationName {
+  font-size: 2em;
+  color: #03989E;
+  text-align: center;
+}
+.RessourcePresentation .presentationInfo .presentationName .type {
+  color: black;
+  text-transform: capitalize;
+}
+.RessourcePresentation .presentationInfo .presentationCategories {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.RessourcePresentation .presentationInfo .presentationCategories span {
+  border-radius: 25px;
+  padding: 5px;
+  color: white;
+  width: 30%;
+  text-align: center;
+  margin-right: 20px;
+  white-space: nowrap;
+}
+.RessourcePresentation .presentationInfo .presentationCategories .colorCultures {
+  background-color: #9E0303;
+}
+.RessourcePresentation .presentationInfo .presentationCategories .colorMentalHeath {
+  background-color: #FFAFB4;
+}
+.RessourcePresentation .presentationInfo .presentationCategories .colorCommunication {
+  background-color: #03989E;
+}
+.RessourcePresentation .presentationInfo .presentationCategories .colorPersonnalDev {
+  background-color: #5b31e7;
+}
+.RessourcePresentation .presentationInfo .presentationCategories .colorEmotionalIntelligence {
+  background-color: #85e425;
+}
+.RessourcePresentation .presentationInfo .presentationCategories .colorHobbies {
+  background-color: #39d0c1;
+}
+.RessourcePresentation .presentationInfo .presentationCategories .colorProfessionalWorld {
+  background-color: #e7bf6a;
+}
+.RessourcePresentation .presentationInfo .presentationCategories .colorParenthood {
+  background-color: #e38ed4;
+}
+.RessourcePresentation .presentationInfo .presentationCategories .colorLifeQuality {
+  background-color: #03a848;
+}
+.RessourcePresentation .presentationInfo .presentationCategories .colorSearchingForMeaning {
+  background-color: #dc8774;
+}
+.RessourcePresentation .presentationInfo .presentationCategories .colorPhysicHealth {
+  background-color: #8ac984;
+}
+.RessourcePresentation .presentationInfo .presentationCategories .colorSpirituality {
+  background-color: #bbcc82;
+}
+.RessourcePresentation .presentationInfo .presentationCategories .colorAffectiveLife {
+  background-color: #ffe947;
+}
+.RessourcePresentation .presentationInfo .presentationStat {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.RessourcePresentation .presentationInfo .presentationStat span {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1350px) {
+  .RessourcePresentation {
+    height: 175px;
+  }
+  .RessourcePresentation .presentationInfo .presentationName {
+    font-size: 1.5em;
+  }
+  .RessourcePresentation .presentationInfo .presentationStat span {
+    font-size: 1.3em;
+  }
+  .RessourcePresentation .presentationInfo .presentationCategories span {
+    width: 25%;
+  }
+}
+@media (max-width: 1000px) {
+  .RessourcePresentation {
+    height: 150px;
+  }
+  .RessourcePresentation .presentationInfo {
+    height: 150px;
+  }
+  .RessourcePresentation .presentationInfo .presentationCategories {
+    margin-bottom: 0;
+  }
+  .RessourcePresentation .presentationInfo .presentationCategories span {
+    width: 30%;
+  }
+}
+@media (max-width: 800px) {
+  .RessourcePresentation {
+    width: 45%;
+    flex-direction: column;
+    height: 350px;
+  }
+  .RessourcePresentation .presentationImage {
+    width: 100%;
+    height: 175px;
+  }
+  .RessourcePresentation .presentationInfo {
+    padding: 0 10px;
+    width: 98%;
+  }
+  .RessourcePresentation .presentationInfo hr {
+    width: 80%;
+  }
+  .RessourcePresentation .presentationInfo .presentationName {
+    font-size: 1.2em;
+  }
+  .RessourcePresentation .presentationInfo .presentationCategories {
+    justify-content: center;
+  }
+  .RessourcePresentation .presentationInfo .presentationCategories span {
+    width: 40%;
+  }
+  .RessourcePresentation .presentationInfo .presentationStat span {
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 680px) {
+  .RessourcePresentation {
+    width: 75%;
+  }
+}
+@media (max-width: 450px) {
+  .RessourcePresentation {
+    width: 95%;
+  }
+}
+.dark-mode .RessourcePresentation {
+  background-color: #1e1e1e !important;
+}
+.dark-mode .presentationCategories span {
+  color: black !important;
+}/*# sourceMappingURL=RessourcePresentation.css.map */

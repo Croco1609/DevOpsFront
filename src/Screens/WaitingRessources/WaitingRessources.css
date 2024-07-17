@@ -1,0 +1,10 @@
+.BackOfficeWaitinRessourcesContainer {
+  width: 80%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.BackOfficeWaitinRessourcesContainer .displayRessources {
+  width: 80%;
+  margin: 0 auto;
+}/*# sourceMappingURL=WaitingRessources.css.map */

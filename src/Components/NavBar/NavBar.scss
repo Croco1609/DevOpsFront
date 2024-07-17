@@ -1,0 +1,395 @@
+/* NavBar.css */
+@import "../../scss/variables";
+@import "../../scss/normalize";
+  header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 3px 4px 10px 0px #aca4a4;
+    background-color: white;
+    z-index: 100;
+  }
+
+  .dark-mode {
+    header{
+      background-color: #343434;
+      box-shadow: none;
+      .navLink {
+        color: white;
+        
+        &::after {
+          color: white;
+        }
+    }
+  
+  }
+  }
+
+  .mainNavDesktop {
+    background: $mainColor;
+    padding: 10px 0;
+    
+  .logo {
+    margin-left: 10%;
+
+    img{
+      height: auto;
+      width: 150px;
+    }
+
+  }
+  
+  }
+  .mainNavDesktop {
+    background: $mainColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 81px; 
+
+    .mainNavMenu{
+        margin-right: 10%;
+        width: 50%;
+        background-color: $mainColor;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navLink {
+        color:white;
+        background-color: $mainColor;
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+        font-size: 1.3em;
+        
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            transition: width 0.35s ease;
+          }
+          
+          &:hover::after,
+          &.active::after {
+            width: 100%;
+          }
+          
+      }
+  }
+
+  .subNavDesktop {
+    background-color: transparent;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+    
+    
+    .navLink {
+        color: #000;
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+        font-size: 1.5em;
+        
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: black;
+            transition: width 0.35s ease;
+          }
+          
+          &:hover::after,
+          &.active::after {
+            width: 100%;
+          }
+          
+      }
+  }
+  
+  
+.navMobile{
+
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $mainColor;
+
+  .mainNavMobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    transition: all 3s ease;
+    &.show{
+        justify-content: space-between;
+        
+
+        .logo{
+          transition: all 3s ease;
+          width: 90%;
+          text-align: center;
+        }
+      .mainNavMenu{
+        display: none;
+      }
+    }
+    .mainNavMenu{
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+    .navLink{
+      color:white;
+      background-color: $mainColor;
+      font-family: 'Poppins', sans-serif;
+      position: relative;
+      font-size: 2em;
+    }
+  }
+  }
+
+  #burger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    margin-right: 10px;
+  }
+
+.barre {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+
+}
+
+.subMenuMobile{
+  flex-direction: column;
+  align-items: center;
+  background-color: $mainColor;
+
+  hr{
+    width: 100%;
+    height: 2px;
+    background-color: $titreColorOrange;
+  }
+
+  .navLink{
+    color:white;
+    background-color: $mainColor;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+   
+  }
+  &.menuShow{
+    display: flex;
+  }
+
+  &.menuHide{
+    display: none;
+  }
+}
+
+// animation du menu burger
+.change .barre:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .barre:nth-child(2) {
+  opacity: 0;
+}
+
+.change .barre:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+  //debut du responsive
+
+  @media (max-width: 1450px) { 
+    .mainNavDesktop{
+
+      .mainNavMenu{
+        width: 60%;
+        margin-right: 7%;
+      }
+    }
+
+    .logo{
+      margin-left: 7% ;
+    }
+  }
+
+  @media (max-width: 1200px) { 
+    .mainNavDesktop{
+
+      .mainNavMenu{
+        width: 75%;
+        margin-right: 5%;
+      }
+    }
+
+    .logo{
+      margin-left: 5% ;
+      img{
+        width: 125px;
+      }
+    }
+  }
+  
+  @media (max-width: 1000px) { 
+    .mainNavDesktop{
+      display: none;
+    }
+
+    .subNavDesktop{
+      display: none;
+    }
+
+    .navMobile{
+      display: flex;
+    }
+  }
+
+  @media (max-width: 450px) { 
+    .subMenuMobile{
+
+      .navLink{
+        width: 75%; 
+      }
+    }
+      
+  
+    .navMobile{
+    
+      .mainNavMobile{
+
+        
+        .mainNavMenu{
+     
+        .navLink{
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+
+  }
+
+  .account-dropdown {
+    position: relative;
+    display: inline-block;
+    border-radius: 20px;
+    width: auto;
+  }
+  
+  .acessiblity-dropdown{
+    .dropdown{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2px;
+       
+      label{
+        color : $mainColor
+      }
+    }
+  }
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 20px;
+    width: 190px;
+    z-index: 9999;
+  }
+  
+  .dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {
+    background-color: #ddd;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+  }
+  
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .modal-buttons button {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .modal-buttons button:first-child {
+    background-color: #ff5733;
+    color: white;
+  }
+  
+  .modal-buttons button:last-child {
+    background-color: #ccc;
+  }
+
+  .langueWithDarkMode{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 0;
+  }
+  
+  #langSelector{
+    height: auto;
+  }

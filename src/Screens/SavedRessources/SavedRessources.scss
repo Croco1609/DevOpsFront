@@ -1,0 +1,53 @@
+@import "../../scss/variables";
+@import "../../scss/normalize";
+
+.savedRessourcesMainContainer{
+    background-color: white;
+    border-radius: 25px;
+    padding: 5%;
+    width: 80%;
+    margin: 50px auto;
+
+    h2{
+        color : $titreColorOrange;
+        text-align: center;
+    }
+
+    .myRessource{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width : 570px){
+    .savedRessourcesMainContainer{
+        h2{
+            font-size: 2.5em;
+        }
+    }
+}
+
+
+@media (max-width : 470px){
+    .savedRessourcesMainContainer{
+        h2{
+            font-size: 2em;
+        }
+    }
+}
+
+@media (max-width : 370px){
+    .savedRessourcesMainContainer{
+        h2{
+            font-size: 1.5em;
+        }
+    }
+}
+
+.dark-mode{
+
+    .savedRessourcesMainContainer{
+        background-color:#343434 ;
+    }
+}

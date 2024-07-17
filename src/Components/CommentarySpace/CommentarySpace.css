@@ -1,0 +1,91 @@
+.commentarySpace {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.commentaryTitle {
+  font-size: 24px;
+  color: #00a4ba;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.commentUser {
+  display: flex;
+  align-items: center;
+}
+
+.commentSpace {
+  height: 20px;
+}
+
+.comment {
+  background-color: #239b93;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: start;
+  width: 80%;
+  flex-direction: column;
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.comment .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-size: cover;
+}
+
+.comment .content {
+  flex: 1;
+}
+
+.comment .username {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.comment .text {
+  margin: 5px 0;
+}
+
+.comment .actions {
+  display: flex;
+  align-items: center;
+}
+
+.comment .actions .likes {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.comment .actions .likes span {
+  margin-left: 5px;
+}
+
+.comment .reply {
+  margin-left: 70px;
+}
+
+.dark-mode .comment {
+  background-color: #064d56;
+}
+
+.buttonComments {
+  margin-top: 10px;
+  width: auto;
+  display: flex;
+}
+
+.buttonComments > *:not(:first-child) {
+  margin-left: 15px;
+}/*# sourceMappingURL=CommentarySpace.css.map */

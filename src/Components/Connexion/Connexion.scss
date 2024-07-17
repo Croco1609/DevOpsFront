@@ -1,0 +1,101 @@
+@import '../../scss/normalize';
+@import '../../scss/variables';
+
+.mainContainer{
+    margin: 60px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 70px 250px;
+    background-color: $mainColor;
+    border-radius: 20px;
+    color: white;
+    align-items: center;
+}
+
+h2, label{
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-weight: 800; 
+    font-size: 3em; 
+    margin-bottom: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+        display: flex;
+        margin: 5px;
+        border-radius: 5px;
+        background-color: rgb(158, 227, 236);
+        width: auto;
+        padding-right: 20px;
+    }
+}
+
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    width: 300px;
+}
+
+button{
+    font-weight: 700; 
+    font-size: 1.2em; 
+    font-family: 'Roboto', sans-serif; 
+    background-color: white;
+    color: $titreColorOrange;
+    border-radius: 20px;
+    margin: auto;
+    height: 35px;
+    padding: 0 15px 0 15px;
+    cursor: pointer;
+}
+
+.passwordGroup {
+    position: relative;
+}
+
+.passwordInput {
+    position: relative;
+}
+
+
+.passwordIconConnexion {
+    position: absolute;
+    right: 10px;
+    top: 38%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.forgotPasswordLink {
+    display: block;
+    margin-top: 5px;
+    color: white;
+    font-family: 'Robotoitalic', sans-serif;
+    font-size: 0.7em;
+    margin-left: 10px;
+}
+
+.forgotPasswordLink:hover {
+    color: $titreColorOrange;
+}

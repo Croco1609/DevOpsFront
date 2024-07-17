@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body{
+    background-color: lightgrey;
+  }
+
+  body.light-mode{
+    background-color: lightgrey;
+  }
+
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.switch-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.switch-input {
+    display: none;
+}
+
+.switch-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    background-color: #ccc;
+    border-radius: 15px;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.switch-label .sun-icon,
+.switch-label .moon-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.switch-handle {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.switch-input:checked + .switch-label .switch-handle {
+    transform: translateX(40px);
+}
+
+.switch-input:checked + .switch-label {
+    background-color: #fed7a1;
+}

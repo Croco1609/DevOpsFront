@@ -1,0 +1,253 @@
+@import "../../scss/normalize";
+@import "../../scss/variables";
+
+.mainContainer {
+    margin: 60px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.publishResource {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 70px 250px;
+    background-color: $mainColor;
+    border-radius: 20px;
+    color: white;
+    align-items: center;
+}
+
+h2,
+label {
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input,
+form textarea {
+    display: flex;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgb(158, 227, 236);
+    width: 300px;
+    padding-right: 20px;
+    min-width: 250x;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    width: 300px;
+}
+
+button {
+    font-weight: 700;
+    font-size: 1.2em;
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+    color: $titreColorOrange;
+    border-radius: 20px;
+    margin: auto;
+    height: 35px;
+    padding: 0 15px 0 15px;
+    cursor: pointer;
+}
+
+.error {
+    color: $titreColorOrange;
+}
+
+select {
+    appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+    color: rgb(91, 91, 91);
+    padding: 0.5em 1em;
+    width: 170px;
+    background-color: rgb(158, 227, 236);
+    height: 40px;
+    text-align: center;
+}
+
+option {
+    padding: 0.5em;
+    color: white;
+    background-color: rgb(158, 227, 236);
+}
+
+.errorMessage {
+    color: $titreColorOrange;
+    font-size: 1em;
+    margin-bottom: 20px;
+    font-family: "Roboto";
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 17px;
+    margin: 20px 0;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-label {
+    margin-right: 10px;
+}
+
+.slider-toggle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider-toggle:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 4px;
+    bottom: 2.5px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.privateInput:checked + .slider-toggle {
+    background-color: $titreColorOrange;
+}
+
+.privateInput:focus + .slider-toggle {
+    box-shadow: 0 0 1px $titreColorOrange;
+}
+
+.privateInput:checked + .slider-toggle:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.toggle-container {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+textarea,
+input[type="text"] {
+    display: flex;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgb(158, 227, 236);
+    padding-right: 20px;
+    font-family: "RobotoItalic", sans-serif;
+}
+
+.uploadImage label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-color: $titreColorOrange; 
+    color: #ffffff; 
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none; 
+    transition: all 0.3s ease;
+}
+
+.uploadImage label:hover {
+    background-color: #ffa500; 
+}
+
+.uploadImage input[type="file"] {
+    display: none; 
+}
+
+.uploadImage {
+    margin-bottom: 15px;
+}
+
+#description{
+    width: 300px;
+}
+
+form > *:last-child {
+    margin-top: 15px;
+}
+
+.categoryTypeRelation {
+    display: flex;
+    flex-direction: row;
+
+    & > .formGroup:not(:first-child) {
+        margin-left: 10px;
+    }
+}
+
+.success {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.success.fade-out {
+    opacity: 0;
+}
+
+.custom-select-container{
+    width: 220px;
+}
+
+.removeFileButton{
+    font-weight: 100;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    justify-content: center;
+}
+
+.fileInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+}
